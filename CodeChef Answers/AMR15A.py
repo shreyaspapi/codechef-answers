@@ -10,6 +10,6 @@ for i in a:
     odd.append(i)
 
 if len(even) > len(odd):
-  print("READY FOR BATTLE")
+  print("READY FOR BATTLE...")
 else:
-  print("NOT READY")
+  print("NOT READY FOR BATTLE..")
