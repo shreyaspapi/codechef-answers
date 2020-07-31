@@ -7,17 +7,16 @@ num_of_pairs = n + m - 1
 li = []
 
 def compare(g, l):
-    for i in l:
-        if i[2] == g:
-            return True
-    return False
+    return any(i[2] == g for i in l)
 
-for i in range(len(a)):
+for item_ in a:
     if len(li) >= num_of_pairs:
         break
-    for j in range(len(b)):
-        if ([a[i], b[j], a[i] + b[j]] not in li) and compare(a[i] + b[j] ,li) == False:
-            li.append([a[i], b[j], a[i] + b[j]])
+    for item in b:
+        if [item_, item, item_ + item] not in li and compare(
+            item_ + item, li
+        ) == False:
+            li.append([item_, item, item_ + item])
 
 c = num_of_pairs
 

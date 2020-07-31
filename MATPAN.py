@@ -20,7 +20,7 @@ while t:
         if i in not_string:
             not_string.remove(i)
 
-    if len(not_string) == 0:
+    if not not_string:
         full_price = 0
     else:
         for i in not_string:
@@ -28,7 +28,7 @@ while t:
             full_price += letter_value[a]
 
     answers.append(full_price)
-    
+
     t -= 1
 
 for i in answers:

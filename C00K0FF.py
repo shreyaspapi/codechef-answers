@@ -10,7 +10,7 @@ while t:
             s += 1
         elif a == "easy":
             e += 1
-        elif a == "easy-medium" or a == "medium":
+        elif a in ["easy-medium", "medium"]:
             m += 1
         else:
             h+= 1
