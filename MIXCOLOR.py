@@ -10,7 +10,7 @@ while t:
     else:
         for i in n_colors:
             dict_n[i] = 0
-        for j in n_colors:
+        for _ in n_colors:
             dict_n[i] += 1
         for key,value in dict_n.items():
             ans += value - 1

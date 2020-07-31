@@ -12,11 +12,8 @@ for _ in range(t):
             count_b += 1
     if count_a > count_b:
         print("BOB")
-    elif count_b > count_a:
-        print("ALICE")
     else:
         print("ALICE")
-
 """
 2
 5 3 2

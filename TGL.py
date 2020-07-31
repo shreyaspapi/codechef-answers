@@ -2,7 +2,7 @@ max1,max2 = 0,0
 lead1,lead2 = 0,0
 s,t = 0,0
 n = int(input())
-for i in range(n):
+for _ in range(n):
     p1,p2 = map(int,input().split())
     s += p1
     t += p2
